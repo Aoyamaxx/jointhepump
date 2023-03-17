@@ -1,35 +1,148 @@
-ul {list-style-type: none;
+ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;}
-li {float: left;}
-li a {display: block;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;}
-li a:hover {background-color: #111;}
+    text-decoration: none;
+}
 
-.navbar {font-family: "Barlow";
-         font-size: 20px;
-         font-weight: 100;
-         justify-content: center;
-         align-content: flex-start;}
-.socials {float:right;
-         width:auto;
-         border:none;
-         display:block;
-         outline:0;
-         justify-content: center;}
-.jointhepumps {font-family: "Barlow";
-                font-size: 30px;
-                font-weight: 300;
-                justify-content: center;
-                text-align: center;}
-.flex-rectangle{width: 100%;
+li a:hover {
+    background-color: #111;
+}
+
+.navbar {
+    font-family: "Barlow";
+    font-size: 20px;
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-link {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background-color: #111;
+}
+
+.user-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.socials {
+    float: right;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+    justify-content: center;
+}
+
+.jointhepumps {
+    font-family: "Barlow";
+    font-size: 30px;
+    font-weight: 300;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-rectangle {
+    width: 100%;
     height: 700px;
-    background-image: linear-gradient(to right top, #3344de, #0f61e7, #0f7aec, #3790eb, #5ea5e8, #56b2e1, #64bcd7, #7dc4cd, #87c5b6, #9ec29f, #b8bc91, #d0b48f);}
-.flex-rectangle:before{content: "";
-        display: block;}
-.title{padding: 12px 80px;position:static;top:50%;left:0%;color: white;}
-.objective-box
+    background-image: linear-gradient(to right top, #3344de, #0f61e7, #0f7aec, #3790eb, #5ea5e8, #56b2e1, #64bcd7, #7dc4cd, #87c5b6, #9ec29f, #b8bc91, #d0b48f);
+}
+
+.flex-rectangle:before {
+    content: "";
+    display: block;
+}
+
+.title {
+    padding: 12px 80px;
+    position: static;
+    top: 50%;
+    left: 0%;
+    color: white;
+}
+
+.objective-box {
+    /* Add styles for the objective-box here */
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.user-link {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.user-link:hover {
+    background-color: #111;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 14px 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #111;
+}
