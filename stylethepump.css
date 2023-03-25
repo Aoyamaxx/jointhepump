@@ -1,148 +1,149 @@
-ul {
-    list-style-type: none;
+body {
+	background-color: white;
+	font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 
-li {
-    float: left;
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	border-bottom: 1px solid gray;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+.logo {
+	height: 50px;
+}
+
+.menu-items {
+	display: flex;
+	align-items: center;
+}
+
+.menu-item {
+	margin-right: 20px;
+	font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
 }
 
-li a:hover {
-    background-color: #111;
+.menu-item:hover {
+	text-decoration: none;
+    color: rgba(0, 0, 0, 1);
 }
 
-.navbar {
-    font-family: "Barlow";
-    font-size: 20px;
-    font-weight: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.social-link {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.social-link:hover {
-    background-color: #111;
-}
-
-.user-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.socials {
-    float: right;
-    width: auto;
-    border: none;
-    display: block;
-    outline: 0;
-    justify-content: center;
-}
-
-.jointhepumps {
-    font-family: "Barlow";
-    font-size: 30px;
-    font-weight: 300;
-    justify-content: center;
-    text-align: center;
-}
-
-.flex-rectangle {
-    width: 100%;
-    height: 700px;
-    background-image: linear-gradient(to right top, #3344de, #0f61e7, #0f7aec, #3790eb, #5ea5e8, #56b2e1, #64bcd7, #7dc4cd, #87c5b6, #9ec29f, #b8bc91, #d0b48f);
-}
-
-.flex-rectangle:before {
-    content: "";
-    display: block;
+.upper-section {
+  height: 50%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
 }
 
 .title {
-    padding: 12px 80px;
-    position: static;
-    top: 50%;
-    left: 0%;
-    color: white;
+  text-align: center;
 }
 
-.objective-box {
-    /* Add styles for the objective-box here */
+.title h1 {
+  font-size: 48px;
+  font-weight: bold;
 }
 
-.right-section {
-    display: flex;
-    align-items: center;
-}
-
-.user-link {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.user-link:hover {
-    background-color: #111;
-}
-
-.dropbtn {
-    background-color: transparent;
-    color: white;
-    padding: 14px 16px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
+.lower-section {
+    height: 50%;
+    min-height: 400px;
     background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
-
-.dropdown:hover .dropdown-content {
+  
+.lower-section img {
+    width: 100%;
+    height: 500px;
     display: block;
+    margin: 0;
+    object-fit: cover;
+    object-position: center;
+}
+  
+  
+
+h1 {
+	font-size: 48px;
+	font-weight: bold;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #111;
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+}
+
+.intro-text {
+  flex-basis: calc(50% - 30px);
+}
+
+.intro-text h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.intro-text p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.map {
+  flex-basis: calc(50% - 30px);
+  height: 400px;
+  background-color: lightgray;
+}
+
+.partners-section {
+  background-color: rgba(228, 227, 227, 0.3);
+  border-radius: 50px;
+  padding: 50px;
+  margin-top: 100px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partners-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.partners-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partner-logo {
+  max-height: 80px;
+  margin: 0 30px 30px 0;
+}
+
+.separator {
+  border-top: 1px solid gray;
+  margin: 50px 0;
 }
